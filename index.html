@@ -1,10 +1,21 @@
 <html>
     <style>
-        html{
-            margin: 0;
-            padding: 0;
+       *{
+           padding: 0;
+           margin: 0;
+       }
+        html,body{
+            height: 100%;
         }
-        
+        #container{
+            min-height: 100%;
+            margin-bottom: -98px;
+        }
+        .nav{
+           float: right;
+           padding-right: 2vw;
+           padding-top: 2vw;
+        }
         .search_box{
             width: 500px;
             height: 40px;
@@ -16,27 +27,25 @@
            padding-top:20px;
            padding-bottom: 20px;
        }
+       .image{
+           margin-top: 8vw;
+       }
        .button{
-            margin-top: 50px;
-            position: relative;
+            margin-top: 40px;
             width: 120px;
             height: 40px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             background-color: rgb(252, 252, 252);
        }
        a{
            text-decoration: none;
-           font-size: 13px;
+           font-size: 1vw;
            margin-right: 6px;
        }
        a:hover{
            text-decoration: underline;
        }
-       footer{
-           margin-top: 270px;
-          border-top: 1px solid rgb(207, 207, 207);
-          padding-left: 30px;
-       }
+     
        .right{
            float: right;
        }
@@ -52,6 +61,25 @@
            display: inline;
            
        }
+       footer{
+           position: relative;
+           padding-top: 1vw;
+           padding-bottom: 1vw;
+           background-color: rgb(235, 235, 235);
+           border-top: .1vw solid lightgray;
+           
+       }
+       .bottom_1{
+           padding-left: 1vw;
+           padding-bottom: .9vw;
+       }
+       .bottom_2{
+        border-top: .1vw solid lightgray;
+        padding-top: .9vw;
+        padding-left: .9vw;
+        padding-right: .9vw;
+       }
+       
     
        
     </style>
@@ -59,18 +87,16 @@
         
     </head>
     <body>
-        <div>
-        <nav>
-            <ul class="right">
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li><a href="">LTT</a></li>
-            </ul>
-        </nav>
-
-        <div>
+        <div id="container">
+            <div class="nav">
+                <ul>
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Images</a></li>
+                    <li><a href="">photo</a></li>
+                </ul>
+            </div>
             <center>
-                <img  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+                <img class="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
                 <form action="#">
                     <input class="search_box" type="text" placeholder=""><br>
                     <input class="button button_1" type="submit" value="Google Search">
@@ -81,20 +107,20 @@
             </center>
         </div> 
 
-        <div>
-           <p> India</p>
-            <p class="left">
+        <footer>
+          <div class="bottom_1">India</div>
+           <div class="bottom_2">
                 <a href="">Advertising</a>
                 <a href="">Business</a>
                 <a href="">About</a>
                 <a href="">How Search Works</a>
-            </p>
+           
             <p class="right">
                 <a href="">Privacy</a>
                 <a href="">Terms</a>
                 <a href="">Settings</a>
             </p>
         </div>
-    </div>
+        </footer>
     </body>
 </html>
